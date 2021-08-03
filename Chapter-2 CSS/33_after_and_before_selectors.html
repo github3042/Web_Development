@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After and Before pseudo selectors</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(128, 235, 235);
+        background: url('') no repeat center center/cover;
+    }
+    header::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    
+    }
+    .container{
+        font-size: 20px;
+    }
+    .nav{
+        display: flex;
+        /* justify-content: center; */
+    }
+    .item{
+        list-style: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 120px;
+    }
+    section{
+        border: 3px solid black;
+        height: 300px;
+        margin: 3px 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        /* text-align: center; */
+        font-size: 2.5rem;
+    }
+    p{
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <div class="container">
+            <ul class="nav">
+                <li class="item">Home </li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contacts</li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ipsa culpa explicabo dolor natus veniam nostrum magni laudantium vel quis. Optio reprehenderit eius nihil, exercitationem nesciunt pariatur, beatae labore veniam facere illo commodi temporibus dolores repellat saepe dignissimos voluptas porro veritatis sint consectetur? Hic harum eveniet reiciendis amet ipsa repellat dignissimos labore laudantium saepe aliquam.</p>
+    </section>
+</body>
+</html>

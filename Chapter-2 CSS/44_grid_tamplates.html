@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-gap: 10px;
+            /* grid-template-columns: repeat(4, 1fr); */
+           
+            grid-template-areas:
+             'navbar navbar navbar navbar'
+             'section section section side-section'
+             'footer footer footer footer';
+        }
+        .item{
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(161, 97, 221);
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+            height: 500px;
+        }
+        #side-section{
+            grid-area: side-section;
+        }
+        footer{
+            grid-area: footer;
+            /* width: 100%; */
+        }
+        @media screen and(max-width: 550px){
+            #container{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 4fr 1fr;
+                grid-template-areas: 
+                "navbar"
+                "section"
+                "side-section"
+                "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Services Contact
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, sed. Tenetur praesentium suscipit quisquam. Cum quisquam illum expedita similique. Pariatur distinctio vel perferendis sapiente aut!
+        </div>
+        <div id="side-section" class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, perferendis doloribus recusandae beatae, reprehenderit exercitationem inventore aut facilis voluptates hic tenetur ea minima rerum incidunt id esse earum. Iste, hic.
+        </div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis odit nesciunt nobis eos necessitatibus voluptatem voluptatibus accusamus! Praesentium assumenda sunt saepe fugiat. Optio recusandae explicabo, culpa tempore voluptatibus maiores inventore. Veniam assumenda minus rerum reiciendis provident qui explicabo ea?
+        </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some other selectors</title>
+</head>
+     <style>
+         h2{
+             background-color: red;
+             color: black;
+             font-weight: bold;
+             text-align: center;
+             border: 3px solid black;
+             /* display:inline-flex; */
+             /* display:inline-flex; */
+             
+              }
+         .container{
+            /* display: inline-block;*/
+            width: 250px;
+            display: block;
+            margin: auto; 
+         }
+         /* if p is contained by any li which is contained by div */
+         /* div li p{
+             background-color: green;
+         } */
+
+         /* if p contained by any li which is contained by ul */
+         /* div ul p{
+             background-color: tomato;
+             /* text-align: center; */
+         /* } */
+
+/*  if p is right inside div then this csss will be applied */
+         /* div > p{
+             background-color: pink;
+         } */
+         /* if p is right after div i . e p is the next sibling of div */
+         div + p{
+             background-color: blue;
+         }
+     </style>
+
+<body>
+    <div class="container">
+        <h2>This is more on selecotrs</h2>
+        <div class="row">
+            <ul>
+                <li>
+                    <p>this is paragraph inside li</p>
+                </li>
+                <li>this will not get effected</li>
+                <p>This is para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+</body>
+
+</html>

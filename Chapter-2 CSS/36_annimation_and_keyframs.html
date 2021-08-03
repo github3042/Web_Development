@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annimation And Key Frames</title>
+    <style>
+    .container{
+        /* width: 100%; */
+        height: 150px;
+        background-color: rgb(123, 248, 66);
+    }
+    #box{
+        width: 150px;
+        height: 150px;
+        /* border: 1px solid black; */
+        position: relative;
+        background-color: rgb(6, 104, 6);
+
+        /* Annimation */
+
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease; */
+        /* animation-timing-function: ease-in; */
+
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 2s; */
+        /* animation-direction: reverse; */
+        
+        /* This propertis can be using this shorthand */
+        /* animation: annimation name , annimation duration, interection time, fill mode, 
+        timinhg function, delay, direction: reverse, ; */
+        
+        /* animation: dhiraj 2s 1 alternate ease-in-out 1 ; */
+        
+        animation-name: dhiraj1; 
+        animation-duration: 8s;
+         animation-iteration-count: 1; 
+    }
+
+    @keyframes dhiraj{
+        from {
+            width:200px;
+        }
+        to {
+            width: 900px;
+        }
+    }
+
+    @keyframes dhiraj1{
+        0%{
+            top:0px;
+            left: 0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0; 
+            left: 250px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+          <p>Hello</p>
+        </div>
+    </div>
+</body>
+</html>

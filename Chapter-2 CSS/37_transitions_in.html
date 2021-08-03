@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions In CSSS</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            padding-top: 50px;
+        }
+        #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            margin:20px auto;
+            background-color: purple;
+            justify-content: center;
+            /* text-align: center; */
+            align-items: center;
+
+            /* transition-property: background-color; */
+            /* transition-duration: 1s; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-delay: 1s; */
+
+            /* transition:  short hand properties in one line ; */
+            transition: all 1s ease-in-out 0.5s;
+        }
+        #box:hover{
+            width: 400px;
+            height: 400px;
+            font-size: 35px;
+            font-weight: bold;
+            border-radius: 20px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

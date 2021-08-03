@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Langar', cursive;
+            background-color: rgb(126, 133, 38);
+        }
+
+        .container {
+            border: 3px solid rgb(24, 48, 1);
+            background-color: rgb(181, 116, 241);
+            width: 900px;
+             /* margin: 20px 20px 20px;*/
+            margin:  30px auto;
+            /* width: 500px; */
+        }
+
+        .item {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+            background-color: rgb(243, 229, 101);
+            /* width: 500px; */
+        }
+
+        #fruit {
+			  float: left;
+            width: 45%;
+        }
+
+        #computer {
+            float: right;
+            width: 45%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: left;
+            clear: both;
+            width: 96%;
+
+        }
+        p,h1{
+            /* text-align: right; */
+            /* text-align: left; */
+            /* text-align: centerte; */
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 345px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store </h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, eligendi, a
+                magnam, nam quisquam eum aliquam vel praesentium amet consequatur consequuntur quod est nobis facilis
+                eos tempora repudiandae. Dolores doloribus quia fugit nisi Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quasi nihil minima vitae nisi libero quas, soluta accusamus culpa eum ipsa sequi
+                earum. Nihil dolores soluta placeat impedit? Magni, unde assumenda. Labore fugit facilis asperiores
+                temporibus.</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Comouter</h3>
+            <p id="comouterpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, eligendi, a
+                magnam, nam quisquam eum aliquam vel praesentium amet consequatur consequuntur quod est nobis facilis
+                eos tempora repudiandae. Dolores doloribus quia fugit nisi maiores Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Dolorem temporibus architecto, illo ipsum tempore quasi cumque molestiae
+                voluptates mollitia eius soluta laboriosam a delectus animi blanditiis, modi ut sunt dolorum impedit. Et
+                optio illo ea.
+
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationry</h3>
+            <p id="stationarypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, eligendi, a
+                magnam, nam quisquam eum aliquam vel praesentium amet consequatur consequuntur quod est nobis facilis
+                eos tempora repudiandae. Dolores doloribus quia fugit nisi maiores.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationry</h3>
+            <p id="stationarypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, eligendi, a
+                magnam, nam quisquam eum aliquam vel praesentium amet consequatur consequuntur quod est nobis facilis
+                eos tempora repudiandae. Dolores doloribus quia fugit nisi maiores.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(94, 228, 183);
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            align-content: center;
+            border: 3px solid rgb(54, 2, 2);
+            background-color: rgb(187, 6, 111);
+            /* box-sizing: border-box; */
+            width: 530px;
+            margin:33px auto ;
+        
+
+        }
+
+        .item {
+            border: 2px solid rgb(17, 12, 13);
+            background-color: rgb(233, 185, 122);
+            padding: 26px 30px 25px 20px;
+            /* padding: top, right ,bottom left */
+            margin: 10px 10px 10px 10px;
+            /* margin: top, right ,bottom left */
+            width: 500px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Border Box Sizing</h2>
+    <div class="container">
+        <p id="fpara" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus
+            officia consequuntur, itaque neque asperiores placeat. Aliquid maxime ea odio magnam neque. Rem, numquam
+            expedita officia recusandae labore harum! Culpa at fugiat aut distinctio!</p>
+
+        <p id="spara" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus
+            officia consequuntur, itaque neque asperiores placeat. Aliquid maxime ea odio magnam neque. Rem, numquam
+            expedita officia recusandae labore harum! Culpa at fugiat aut distinctio!</p>
+
+        <p id="tpara" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus
+            officia consequuntur, itaque neque asperiores placeat. Aliquid maxime ea odio magnam neque. Rem, numquam
+            expedita officia recusandae labore harum! Culpa at fugiat aut distinctio!</p>
+    </div>
+</body>
+
+</html>

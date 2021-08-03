@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Whith Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'nav nav nav nav'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        nav {
+            grid-area: nav;
+            text-align: center;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 20px;
+            background-color: aqua;
+        }
+        span{
+            padding: 20px;
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: rgb(247, 129, 129);
+            }
+            span{
+                display: block;
+                text-align: center;
+                padding: 10px;
+            }
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+
+            body {
+                background-color: rgb(13, 206, 100);
+            }
+            span{
+                display: block;
+                text-align: center;
+                padding: 10px;
+            }
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 900px) {
+
+            body {
+                background-color: rgb(243, 132, 206);
+            }
+             .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            body {
+                background-color: rgb(231, 194, 138);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>Services</span>
+            <span>About Us</span>
+            <span>Contacts</span>
+              
+        </nav>
+        <section class="bdr">
+            <h2>Lear CSS In Hindi</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorum aperiam magni ea sed error laborum soluta consectetur eum sint nesciunt, ipsa consequatur perferendis obcaecati maxime cupiditate explicabo officia rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eum porro ipsum fugiat assumenda beatae ratione et, voluptatibus nulla odit quae eaque omnis qui iste!
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officia eligendi accusantium voluptas! Perspiciatis iste expedita autem magni saepe architecto natus eligendi consectetur fuga similique?
+        </aside>
+        <footer class="bdr">
+            CopyWrite CodeWithHarry
+        </footer>
+    </div>
+</body>
+
+</html>

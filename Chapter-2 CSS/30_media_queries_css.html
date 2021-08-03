@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media Queries In CSS</title>
+    <style>
+        .box {
+            text-align: center;
+            font-size: 45px;
+            color: white;
+            background-color: red;
+            /* display: none; */
+        }
+
+        @media only screen and (max-width: 300px ) {
+
+            #box1 {
+                background-color: cyan;
+                color: black;
+                display: block;
+
+            }
+        }
+        @media only screen and  (min-width: 300px) and (max-width: 500px){
+
+            #box2 {
+                background-color: green;
+                display: block;
+
+            }
+        }
+        @media only screen and (min-width: 500px) and (max-width: 900px){
+
+            #box3 {
+                background-color: black;
+                display: block;
+
+            }
+        }
+      
+        @media only screen and (min-width: 900px){
+
+            #box4 {
+                background-color: yellow;
+                display: block;
+                color: black;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Mai Apple hoon!</div>
+    <div class="box" id="box2">Mai Moto hoon!</div>
+    <div class="box" id="box3">Mai Tablet hoon!</div>
+    <div class="box" id="box4">Mai desktop computer hoon!</div>
+</body>
+</html>
