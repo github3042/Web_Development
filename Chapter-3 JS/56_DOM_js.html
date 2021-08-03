@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h3>DOM ( Document Object Module)</h3>
+    <div id="home" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us </li>
+            <li> Services</li>
+            <li> Galerry</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <div class="contaainer">
+        Another container
+    </div>
+
+    <script>
+        let home = document.getElementById('home');
+        console.log(home);
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+
+
+        // let sel = document.querySelector('#nav>li');
+        // console.log("selectors return0", sel);
+        
+        let sel = document.querySelectorAll('#nav>li');
+        console.log("selectors return0", sel);
+        
+    </script>
+</body>
+</html>

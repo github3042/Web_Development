@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events In JS</title>
+    <style>
+        body{
+            background:linear-gradient(rgb(0,0,0,0), #f0f183) rgba(192, 41, 197, 0);
+        }
+        .container {
+            width: 80%;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            /* align-items: center; */
+            padding: 10px;
+            background:linear-gradient(rgba(0, 0, 0, 0), #009900 ) rgb(172, 119, 221);
+
+        }
+
+        #btn {
+            padding: 10px 15px;
+            background-color: aquamarine;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        ul{
+            display: flex;
+            padding-bottom: 100px ;
+            padding: 10px;
+            align-items: center;
+        }
+        li{
+            list-style: none;
+            padding: 0 20px;
+        }
+        li:hover{
+            background-color: rgb(23, 71, 71);
+            border: 1px solid black transparent;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Brouser Events</h2>
+    <ul>
+        <li>click</li>
+        <li>contaxtmenu</li>
+        <li>mouseover/mouseout</li>
+        <li>mousedown/mouseup</li>
+        <li>mousemove</li>
+        <li>focuse</li>
+        <li>submit</li>
+        <li>DOMcontent loaded</li>
+        <li>transitionend </li>
+    </ul>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit inventore quod neque!
+            Inventore nisi quia omnis debitis tenetur dolor nostrum aut, iusto expedita perferendis! Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Quis harum tenetur ducimus. Reiciendis magnam porro quia veritatis
+            ipsam ex iure quisquam maiores accusamus error fuga in voluptatum quam officiis suscipit facilis eum
+            quibusdam quas, commodi ea! Repellat enim, et veniam repellendus quos, deserunt quaerat dolor quod harum
+            temporibus id iure. Dicta fugit numquam ducimus earum ratione sunt debitis maxime nisi commodi temporibus
+            aliquid veniam illum omnis perferendis tempora, error dolore quibusdam minus, officia, itaque porro ex
+            cupiditate nesciunt? Quasi voluptatem rem nam! Omnis voluptate repudiandae vel repellat non perferendis,
+            nesciunt aspernatur debitis adipisci tenetur consectetur doloribus nihil blanditiis sit voluptas molestiae
+            molestias deserunt consequuntur, illo quidem! Enim eaque perspiciatis eligendi sit eum harum dolorem modi
+            recusandae voluptates est maxime quos, quia exercitationem, autem provident. Repudiandae ipsum beatae culpa
+            consectetur impedit amet quis, asperiores tempora mollitia facere consequatur explicabo quam? Aperiam sequi
+            beatae veritatis nisi explicabo, autem obcaecati vel molestias ea? </p>
+        <button id="btn" onclick="togglehide()">Show/Hide</button>
+    </div>
+
+    <script>
+            let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            // console.log("Mouse inside");
+            // alert("Mouse inside");
+        });
+        para.addEventListener('mouseout', function run(){
+            // console.log("Mouse outside");
+        //    alert("Mouse went outside");
+        });
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

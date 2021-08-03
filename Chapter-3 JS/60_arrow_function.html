@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Arrow Function</h2>
+    </div>
+
+    <script>
+        // Arrow Function
+        // let greet = ()=> {
+        //     console.log("Good Morning");
+        // }
+
+        let greet = ()=>  console.log("Good Morning");
+
+        // function greet(){
+        //     console.log("Good Morning");
+        // }
+        greet();
+
+        setTimeout(() => {
+            console.log("We are inside set time out")
+        }, 3000);
+         
+        // let sum = (a,b)=>{
+        //     return a+b;
+        // }
+
+        let sum = (a, b) => a+b; 
+        let half = a => a/2; 
+
+        let obj1 = {
+            greeting: "Good Morning",
+            names: ["dap","sap","vap","vap","anp"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + " kukdoo koo " + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>
