@@ -1,0 +1,46 @@
+    readDoubleBE(offset?: number): number;
+    reverse(): this;
+    swap16(): Buffer;
+    swap32(): Buffer;
+    swap64(): Buffer;
+    writeUInt8(value: number, offset?: number): number;
+    writeUInt16LE(value: number, offset?: number): number;
+    writeUInt16BE(value: number, offset?: number): number;
+    writeUInt32LE(value: number, offset?: number): number;
+    writeUInt32BE(value: number, offset?: number): number;
+    writeInt8(value: number, offset?: number): number;
+    writeInt16LE(value: number, offset?: number): number;
+    writeInt16BE(value: number, offset?: number): number;
+    writeInt32LE(value: number, offset?: number): number;
+    writeInt32BE(value: number, offset?: number): number;
+    writeFloatLE(value: number, offset?: number): number;
+    writeFloatBE(value: number, offset?: number): number;
+    writeDoubleLE(value: number, offset?: number): number;
+    writeDoubleBE(value: number, offset?: number): number;
+
+    fill(value: string | Uint8Array | number, offset?: number, end?: number, encoding?: BufferEncoding): this;
+
+    indexOf(value: string | number | Uint8Array, byteOffset?: number, encoding?: BufferEncoding): number;
+    lastIndexOf(value: string | number | Uint8Array, byteOffset?: number, encoding?: BufferEncoding): number;
+    entries(): IterableIterator<[number, number]>;
+    includes(value: string | number | Buffer, byteOffset?: number, encoding?: BufferEncoding): boolean;
+    keys(): IterableIterator<number>;
+    values(): IterableIterator<number>;
+}
+
+//#region borrowed
+// from https://github.com/microsoft/TypeScript/blob/38da7c600c83e7b31193a62495239a0fe478cb67/lib/lib.webworker.d.ts#L633 until moved to separate lib
+/** A controller object that allows you to abort one or more DOM requests as and when desired. */
+interface AbortController {
+    /**
+     * Returns the AbortSignal object associated with this object.
+     */
+
+    readonly signal: AbortSignal;
+    /**
+     * Invoking this method will set this object's AbortSignal's aborted flag and signal to any observers that the associated activity is to be aborted.
+     */
+    abort(): void;
+}
+
+/** A signal object that allows you to communica
