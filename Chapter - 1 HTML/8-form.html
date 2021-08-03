@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>This Is Form</h2>
+    <form action="dhirajpatil.php">
+        <label for="fname">First Name</label>
+        <div>
+            <input type="text"id="fname">
+        </div>
+        <br>
+
+        <label for="lname">Last Name</label>
+        <div>
+            <input type="text"id="lname">
+        </div>
+        <br>
+
+        <label for="date">Date of Birth</label>
+        <div>
+            <input type="date" name="" id="date">
+        </div>
+        <br>
+
+        <label for="number">Contact</label>
+        <div>
+            <input type="number" name="" id="number">
+        </div>
+        <br>
+        <label for="eligibility">Eligibility</label>
+        <div>
+            <!-- <input type="checkbox" name="" id="eligibility"> -->
+            Yes: <input type="radio" name="yes" id="eligibility"> No: <input type="radio" name="yes" id="eligibility">
+        </div>
+        <br>
+        <label for="gender">Gender</label>
+        <div>
+            Male:  <input type="radio" name="Gender" id="gender"> Female:  <input type="radio" name="Gender" id="gender">
+
+        </div>
+        <br>
+
+        <label for="category">Category</label>
+        <div>
+            <select name="Category" id="category">
+                <option value="obc">OBC</option>
+                <option value="gen">General</option>
+                <option value="othr">Other</option>
+            </select>
+        </div>
+        <br>
+        <label for="check">Text Area</label>
+        <div>
+            <textarea name="Text" id="check" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+        <input type="submit" name="Submit" id="">
+        <input type="reset" name="Reset" id="">
+
+    
+    </form>
+    
+</body>
+</html>
